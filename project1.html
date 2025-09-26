@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey    
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title"> Profile Survey </h1>
+    <p id="description"> Thank you for responding to the survey </p>
+    <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name"> Name: <input id="name" type="text" placeholder="Enter your name"required /></label>
+      <label id="number-label" for="number"> Age: <input id="number" type="number" min="10" max="126" placeholder="Enter your age" required /></label>
+      <label for="dropdown"> Current role
+        <select id="dropdown">
+          <option value="" >Select your current role</option>
+          <option value="1"> Student </option>
+          <option value="2"> Full time job </option>
+          <option value="3"> Part time job </option>
+          <option value="4"> Other option </option>
+        </select>
+      </label>
+      <label id="email-label" for="email"> Email: <input id="email" type="email" placeholder="Enter your email" required />
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend> Account Type </legend>
+      <label for="personal"><input id="personal" type="radio" value="account" class="account-type" name="account" checked /> Personal </label>
+      <label for="business"><input id="business" type="radio" value="account" class="account-type" name="account" /> Business </label>
+    </fieldset>
+    <fieldset>
+      <legend id="legend-2"> What are your hobbies? (check what you do) 
+      </legend>
+      <label class="hobby-type" for="hobby"><input id="hobby" type="checkbox" value="hobby" class="hobby-type" name="hobby" /> Sports/Fitness </label>
+      <label class="hobby-type" for="hobby"><input id="hobby" type="checkbox" value="hobby" class="hobby-type" name="hobby" /> Volunteer Work </label>
+      <label class="hobby-type" for="hobby"><input id="hobby" type="checkbox" value="hobby" class="hobby-type" name="hobby" /> Music </label>
+      <label class="hobby-type" for="hobby"><input id="hobby" type="checkbox" value="hobby" class="hobby-type" name="hobby" /> Arts and Crafts </label>
+      <label class="hobby-type" for="hobby"><input id="hobby" type="checkbox" value="hobby" class="hobby-type" name="hobby" /> Technology </label>
+      <label class="hobby-type" for="hobby"><input id="hobby" type="checkbox" value="hobby" class="hobby-type" name="hobby" /> Internet Activities </label>
+      <label class="hobby-type" for="hobby"><input id="hobby" type="checkbox" value="hobby" class="hobby-type" name="hobby" /> Pursuit of Knowledge </label>
+      <label class="hobby-type" for="hobby"><input id="hobby" type="checkbox" value="hobby" class="hobby-type" name="hobby" /> Food and Drinks </label>
+      <label class="hobby-type" for="hobby"><input id="hobby" type="checkbox" value="hobby" class="hobby-type" name="hobby" /> Miscellaneous </label>
+    </fieldset>
+    <label for="bio" class="bio-label"> Say something about you: 
+      <textarea id="bio" name="bio" rows="6" cols="40" required >
+      </textarea>
+    </label>
+      <input id="submit" type="submit" value="Submit" />
+  </form>
+  </body>
+</html>
